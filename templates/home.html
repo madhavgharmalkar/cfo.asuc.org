@@ -1,0 +1,20 @@
+<div class="container" ng-controller="homeCtrl">
+    <div class="row">
+        <div class="col-md-12">
+            <table datatable="ng" dt-options="dtOptions" class="table table-striped ">
+                <thead>
+                    <tr>
+                        <th ng-repeat="x in dataService.headers">{{::x}}</th>
+                    </tr>
+                </thead>
+                <div>
+                    <tbody>
+                        <tr ng-repeat="x in dataService.data">
+                            <td ng-repeat="y in x track by $index">{{::y}}</td>
+                        </tr>
+                    </tbody>
+                </div>
+            </table>
+        </div>
+    </div>
+</div>
