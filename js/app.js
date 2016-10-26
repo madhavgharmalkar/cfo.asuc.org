@@ -18,6 +18,7 @@ app.controller("homeCtrl", function($scope, $rootScope, dataService, DTOptionsBu
 
     $scope.dtOptions = DTOptionsBuilder.newOptions()
         .withScroller()
+        .withOption('deferRender', true)
         .withOption('scrollY', 500);
 });
 
