@@ -12,14 +12,14 @@ app.config(function($routeProvider) {
     });
 });
 
-app.controller("homeCtrl", function($scope, $rootScope, dataService, DTOptionsBuilder) {
+app.controller("homeCtrl", function($scope, $rootScope, dataService, DTOptionsBuilder, $window) {
     $scope.dataService = dataService;
     $rootScope.pageTitle = "Home";
 
     $scope.dtOptions = DTOptionsBuilder.newOptions()
         .withScroller()
         .withOption('deferRender', true)
-        .withOption('scrollY', 500);
+        .withOption('scrollY', 300);
 });
 
 app.controller("aboutCtrl", function($scope, $rootScope) {
