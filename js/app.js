@@ -32,7 +32,7 @@ app.controller("homeCtrl", function($scope, $rootScope, dataService, DTOptionsBu
             $('td', nRow).bind('click', function() {
                 $scope.$apply(function() {
                     $scope.row.name = aData[0];
-                    $scope.row.description = infoService.data[aData[0]] || 'Sorry, No information available';
+                    $scope.row.description = infoService.data[aData[0]] || 'No information available';
                     // console.log(aData[0]);
                 })
             });
