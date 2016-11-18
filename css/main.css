@@ -43,3 +43,7 @@
 .mission {
     margin-bottom: 10px;
 }
+
+tr:hover{
+    filter: brightness(85%);
+}
