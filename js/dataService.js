@@ -4,7 +4,7 @@ app.service('dataService', function($http) {
 
     var that = this;
 
-    $http.get('/data.csv').then(function(response){
+    $http.get('data/data.csv').then(function(response){
         var parseResult = $.csv.toArrays(response.data);
         that.headers = parseResult[0];
         that.data = parseResult.slice(1);
